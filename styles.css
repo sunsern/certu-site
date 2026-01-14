@@ -10,20 +10,19 @@
   /* Colors */
   --color-black: #000000;
   --color-white: #FFFFFF;
-  --color-primary: #1B4965;
-  --color-primary-hover: #2C6B8F;
+  --color-primary: #2D8CFF;
+  --color-primary-hover: #4DA3FF;
   --color-accent: #0D7377;
   --color-gray-dark: #1A1A1A;
   --color-gray-medium: #333333;
   --color-gray-light: #F2F2F2;
   --color-text-muted: #888888;
 
-  /* Typography */
-  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-weight-normal: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
+  /* Typography - Using Montserrat (free Gotham alternative to match capco.com) */
+  --font-primary: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-weight-normal: 600;
+  --font-weight-semibold: 700;
+  --font-weight-bold: 800;
 
   /* Sizing */
   --header-height: 80px;
@@ -253,7 +252,7 @@ h3 {
 
 .nav__link {
   font-size: 0.875rem;
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-normal);
   position: relative;
 }
 
@@ -315,6 +314,7 @@ h3 {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-top: var(--header-height);
   overflow: hidden;
 }
@@ -341,10 +341,17 @@ h3 {
       rgba(0, 0, 0, 0.5) 100%);
 }
 
-.hero__content {
+.hero__grid {
   position: relative;
   z-index: 2;
-  max-width: 700px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 60px;
+  align-items: end;
+}
+
+.hero__content {
+  max-width: 600px;
 }
 
 .hero__title {
@@ -371,7 +378,7 @@ h3 {
   padding: 10px 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 0.875rem;
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-normal);
   transition: all var(--transition-fast);
 }
 
@@ -383,13 +390,11 @@ h3 {
 
 /* Featured Card in Hero */
 .hero__featured {
-  position: absolute;
-  right: 40px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 400px;
+  width: 100%;
+  max-width: 450px;
   background-color: var(--color-gray-dark);
   overflow: hidden;
+  border-radius: var(--card-radius);
   animation: fadeInRight 0.8s ease 0.6s both;
 }
 
@@ -884,7 +889,6 @@ h3 {
 .video-container {
   position: relative;
   width: 100%;
-  max-width: 1000px;
   margin: 0 auto;
   border-radius: var(--card-radius);
   overflow: hidden;
@@ -1226,6 +1230,10 @@ h3 {
 
   .platform-features {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero__grid {
+    grid-template-columns: 1fr;
   }
 
   .hero__featured {
