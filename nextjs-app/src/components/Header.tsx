@@ -23,7 +23,7 @@ export default function Header() {
         e.preventDefault();
         const target = document.querySelector(href);
         if (target) {
-            const headerHeight = 80;
+            const headerHeight = 72;
             const targetPosition = target.getBoundingClientRect().top + window.scrollY - headerHeight;
             window.scrollTo({ top: targetPosition, behavior: 'smooth' });
         }
@@ -47,7 +47,7 @@ export default function Header() {
         <header className={`header ${isScrolled ? 'scrolled' : ''}`} id="header">
             <div className="container header__inner">
                 <Link href="#" className="logo">
-                    <Image src="/logo.png" alt="Certu Systems" className="logo__image" width={120} height={40} />
+                    <Image src="/logo.png" alt="Certu" className="logo__image" width={100} height={32} />
                 </Link>
 
                 <nav className="nav">
@@ -61,7 +61,7 @@ export default function Header() {
                         ))}
                     </ul>
                     <a href="#contact" className="nav__cta" onClick={(e) => handleNavClick(e, '#contact')}>
-                        Request Demo
+                        Get Started
                     </a>
                 </nav>
 
@@ -89,7 +89,7 @@ export default function Header() {
                     ))}
                 </ul>
                 <a href="#contact" className="nav__cta" onClick={(e) => handleNavClick(e, '#contact')}>
-                    Request Demo
+                    Get Started
                 </a>
             </nav>
         </header>

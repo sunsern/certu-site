@@ -55,12 +55,7 @@ export default function ServicesSection() {
     }, []);
 
     return (
-        <section className="section section--dark services" id="services" ref={sectionRef}>
-            <div className="section__background">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1920&q=80" alt="" />
-                <div className="section__overlay section__overlay--dark"></div>
-            </div>
+        <section className="section services" id="services" ref={sectionRef}>
             <div className="container">
                 <div className="services__header fade-in">
                     <h2 className="services__title">Core Services</h2>
@@ -70,17 +65,14 @@ export default function ServicesSection() {
                     </p>
                 </div>
 
-                <div className="grid grid--3">
+                <div className="services-grid">
                     {services.map((service, index) => (
                         <div key={index} className="service-card fade-in" style={{ transitionDelay: `${index * 0.1}s` }}>
                             <div className="service-card__icon">{service.icon}</div>
                             <h3 className="service-card__title">{service.title}</h3>
                             <p className="service-card__desc">{service.desc}</p>
-                            <Link href="#contact" className="service-card__link">
+                            <Link href="#contact" className="service-card__link link-arrow">
                                 Learn more
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
                             </Link>
                         </div>
                     ))}

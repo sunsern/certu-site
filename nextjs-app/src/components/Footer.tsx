@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="footer__grid">
                     <div className="footer__brand">
                         <div className="footer__logo">
-                            <Image src="/logo.png" alt="Certu Systems" className="logo__image" width={120} height={36} />
+                            <Image src="/logo.png" alt="Certu" className="logo__image" width={100} height={32} />
                         </div>
                         <p className="footer__desc">
                             Enabling optimized logistics that lowers operational costs,
@@ -26,20 +26,19 @@ export default function Footer() {
                     <div className="footer__column">
                         <h4 className="footer__column-title">Platform</h4>
                         <ul className="footer__links">
-                            <li><Link href="#services" className="footer__link">AI Planning</Link></li>
-                            <li><Link href="#services" className="footer__link">Automated Execution</Link></li>
-                            <li><Link href="#services" className="footer__link">Proactive Optimization</Link></li>
-                            <li><Link href="#platform" className="footer__link">Monitoring & Control</Link></li>
+                            <li><Link href="#services" className="footer__link">↳ AI Planning</Link></li>
+                            <li><Link href="#services" className="footer__link">↳ Automated Execution</Link></li>
+                            <li><Link href="#services" className="footer__link">↳ Proactive Optimization</Link></li>
+                            <li><Link href="#platform" className="footer__link">↳ Monitoring & Control</Link></li>
                         </ul>
                     </div>
 
                     <div className="footer__column">
                         <h4 className="footer__column-title">Company</h4>
                         <ul className="footer__links">
-                            <li><Link href="#" className="footer__link">About Us</Link></li>
-                            <li><Link href="#results" className="footer__link">Results</Link></li>
-                            <li><Link href="#contact" className="footer__link">Contact</Link></li>
-                            <li><Link href="#contact" className="footer__link">Request Demo</Link></li>
+                            <li><Link href="#" className="footer__link">↳ About Us</Link></li>
+                            <li><Link href="#results" className="footer__link">↳ Results</Link></li>
+                            <li><Link href="#contact" className="footer__link">↳ Contact</Link></li>
                         </ul>
                     </div>
 
@@ -48,12 +47,6 @@ export default function Footer() {
                         <ul className="footer__links">
                             <li><a href="mailto:sales@certusystems.com" className="footer__link">sales@certusystems.com</a></li>
                             <li><a href="mailto:info@certusystems.com" className="footer__link">info@certusystems.com</a></li>
-                        </ul>
-                        <h4 className="footer__column-title" style={{ marginTop: '1.5rem' }}>Locations</h4>
-                        <ul className="footer__links">
-                            <li className="footer__address">USA HQ: 285 Kappa Dr., Ste 140, Pittsburgh, PA 15238</li>
-                            <li className="footer__address">Asia: Bangkok, Thailand</li>
-                            <li className="footer__address">Mexico: CDMX</li>
                         </ul>
                     </div>
                 </div>

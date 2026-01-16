@@ -38,13 +38,16 @@ export default function WhyAISection() {
     }, []);
 
     return (
-        <section className="section section--dark why-ai" id="why-ai" ref={sectionRef}>
-            <div className="section__background">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1920&q=80" alt="" />
-                <div className="section__overlay section__overlay--dark"></div>
-            </div>
+        <section className="section section--dark" id="why-ai" ref={sectionRef}>
             <div className="container">
+                {/* Statement Section */}
+                <div className="statement-section" style={{ paddingTop: 0, paddingBottom: '80px' }}>
+                    <p className="statement__text fade-in">
+                        Our software powers real-time, <span className="statement__highlight">AI-driven</span> decisions
+                        in logistics operations, from the warehouse floor to the delivery network.
+                    </p>
+                </div>
+
                 <div className="why-ai__header fade-in">
                     <h2 className="why-ai__title">Why AI-Driven Logistics</h2>
                     <p className="why-ai__subtitle">
@@ -53,7 +56,7 @@ export default function WhyAISection() {
                     </p>
                 </div>
 
-                <div className="grid grid--2">
+                <div className="why-cards">
                     <div className="why-card fade-in">
                         <h3 className="why-card__title">Today&apos;s Reality</h3>
                         <ul className="why-card__list why-card__list--negative">
@@ -63,7 +66,7 @@ export default function WhyAISection() {
                         </ul>
                     </div>
 
-                    <div className="why-card why-card--highlight fade-in">
+                    <div className="why-card fade-in">
                         <h3 className="why-card__title">Certu Difference</h3>
                         <ul className="why-card__list why-card__list--positive">
                             {certuDifference.map((item, index) => (

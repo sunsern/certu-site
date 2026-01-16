@@ -1,25 +1,26 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 const features = [
     {
-        number: '1',
+        number: '01',
         title: 'AI Planning',
         desc: 'Fully automated AI-powered shipment planning that balances cost, priority, time, and constraints — in minutes, not hours.',
     },
     {
-        number: '2',
+        number: '02',
         title: 'Automated Assignment',
         desc: 'Assign the right truck, carrier, or driver — instantly. With smart rules, fallback logic, and full transparency.',
     },
     {
-        number: '3',
+        number: '03',
         title: 'Proactive Monitoring',
         desc: 'Real-time visibility across every order, shipment, fleet. One screen. No switching. No guesswork.',
     },
     {
-        number: '4',
+        number: '04',
         title: 'Continuous Improvement',
         desc: 'See your cost to serve. Spot failure patterns. Optimize per region, product, and customer — proactively.',
     },
@@ -63,6 +64,9 @@ export default function PlatformSection() {
                             <span className="platform-feature__number">{feature.number}</span>
                             <h3 className="platform-feature__title">{feature.title}</h3>
                             <p className="platform-feature__desc">{feature.desc}</p>
+                            <Link href="#contact" className="platform-feature__link link-arrow">
+                                Learn more
+                            </Link>
                         </div>
                     ))}
                 </div>

@@ -15,10 +15,6 @@ const results = [
         role: 'For CFOs & Ops Executives',
         desc: 'Lower cost-to-serve. Fewer people doing more. Full control over every mile, every cost, every SLA.',
     },
-    {
-        role: 'For IT & Digital Teams',
-        desc: 'Plug it in. Let it run. Certu integrates quietly — no dashboard overload, no retraining, no disruption.',
-    },
 ];
 
 export default function ResultsSection() {
@@ -43,12 +39,7 @@ export default function ResultsSection() {
     }, []);
 
     return (
-        <section className="section section--dark results" id="results" ref={sectionRef}>
-            <div className="section__background">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1920&q=80" alt="" />
-                <div className="section__overlay section__overlay--dark"></div>
-            </div>
+        <section className="section results" id="results" ref={sectionRef}>
             <div className="container">
                 <div className="results__header fade-in">
                     <h2 className="results__title">Results. Delivered.</h2>
@@ -57,7 +48,7 @@ export default function ResultsSection() {
                     </p>
                 </div>
 
-                <div className="grid grid--4">
+                <div className="results-grid">
                     {results.map((result, index) => (
                         <div key={index} className="result-card fade-in" style={{ transitionDelay: `${index * 0.1}s` }}>
                             <h4 className="result-card__role">{result.role}</h4>

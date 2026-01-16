@@ -28,10 +28,9 @@ export default function CTASection() {
             <div className="container">
                 <h2 className="cta-section__title fade-in">Ready to transform<br />your logistics?</h2>
                 <p className="cta-section__desc fade-in">
-                    We&apos;re Here to Help. Ready to transform your logistics operations?
                     Contact us today to learn more about our innovative solutions and expert services.
                 </p>
-                <a href="mailto:sales@certusystems.com" className="cta-section__btn fade-in">Request Demo</a>
+                <a href="mailto:sales@certusystems.com" className="cta-section__btn fade-in">Get Started</a>
             </div>
         </section>
     );

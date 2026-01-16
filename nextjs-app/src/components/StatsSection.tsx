@@ -48,11 +48,6 @@ export default function StatsSection() {
 
     return (
         <section className="section section--stats" id="stats" ref={sectionRef}>
-            <div className="section__background">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80" alt="" />
-                <div className="section__overlay"></div>
-            </div>
             <div className="container">
                 <div className="stats-header fade-in">
                     <h2 className="stats-title">Built for Results. Proven in the Real World.</h2>
