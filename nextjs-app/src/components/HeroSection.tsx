@@ -55,26 +55,6 @@ export default function HeroSection() {
                         Get Started
                     </Link>
                 </div>
-
-                {/* Device Mockup */}
-                <div
-                    className="hero__device"
-                    style={{
-                        marginTop: '80px',
-                        opacity: contentOpacity,
-                        transform: `translateY(${contentTranslateY}px) scale(${contentScale})`,
-                    }}
-                >
-                    <div className="hero__device-frame">
-                        <div className="hero__device-screen">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img
-                                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80"
-                                alt="Certu Platform Dashboard"
-                            />
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <ScrollToExplore targetId="#stats" />
