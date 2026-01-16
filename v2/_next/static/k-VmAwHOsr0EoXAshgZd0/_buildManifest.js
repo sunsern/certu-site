@@ -4,7 +4,7 @@ self.__BUILD_MANIFEST = {
     "beforeFiles": [
       {
         "source": "/./certu-site/v2//_next/:path+",
-        "destination": "/_next/:path+"
+        "destination": "/certu-site/v2/_next/:path+"
       }
     ],
     "fallback": []
