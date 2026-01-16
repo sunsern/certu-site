@@ -3,7 +3,7 @@ self.__BUILD_MANIFEST = {
     "afterFiles": [],
     "beforeFiles": [
       {
-        "source": "/certu-site/v2//_next/:path+",
+        "source": "/./certu-site/v2//_next/:path+",
         "destination": "/_next/:path+"
       }
     ],

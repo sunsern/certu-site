@@ -47,7 +47,7 @@ export default function Header() {
         <header className={`header ${isScrolled ? 'scrolled' : ''}`} id="header">
             <div className="container header__inner">
                 <Link href="#" className="logo">
-                    <Image src="/logo.png" alt="Certu" className="logo__image" width={100} height={32} />
+                    <Image src="./logo.png" alt="Certu" className="logo__image" width={100} height={32} />
                 </Link>
 
                 <nav className="nav">

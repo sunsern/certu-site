@@ -32,7 +32,7 @@ export default function VideoSection() {
                 </div>
                 <div className="video-container fade-in">
                     <video autoPlay loop muted playsInline className="video-player">
-                        <source src="/video.mp4" type="video/mp4" />
+                        <source src="./video.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
